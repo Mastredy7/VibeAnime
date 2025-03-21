@@ -13,7 +13,7 @@ VibeAnime is the ultimate destination for **trendy and high-quality anime pictur
 - 📐 **CSS Grid & Flexbox** – Fully responsive design    
 
 ## 🚀 Live Demo  
-🔗 [View the Demo](mastredy7.github.io/vibeanime)  
+🔗 [View the Demo](https://mastredy7.github.io/vibeanime)  
 
 ## 📌 How to Use  
 1. Clone the repository:  
