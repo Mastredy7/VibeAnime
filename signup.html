@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeAnime - Sign Up</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- JavaScript for Dark/Light Mode Toggle -->
+    <script type="text/JavaScript" src="js/dark-light.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="flex-wrap">
+        <!-- Navigation Bar -->
+        <nav class="bg-purple-600 dark:bg-purple-800 p-4 shadow-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="logo text-2xl font-bold text-white">VibeAnime</a>
+                <div class="space-x-4 ml-5 flex flex-wrap">
+                    <a href="index.html" class="text-white hover:text-purple-200">Home</a>
+                    <a href="login.html" class="text-white hover:text-purple-200">Login</a>
+                    <a href="about.html" class="text-white hover:text-purple-200">About</a>
+                    <!-- Button Toggle -->
+                    <div>
+                        <button id="theme-toggle" class="text-indigo-500 focus:outline-none">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 3a1 1 0 011 1v1a1 1 0 11-2 0V4a1 1 0 011-1zm4.22 1.22a1 1 0 011.415 1.415l-.707.707a1 1 0 11-1.414-1.414l.707-.708zM17 10a1 1 0 100 2h1a1 1 0 100-2h-1zm-1.22 4.78a1 1 0 011.415-1.415l.707.708a1 1 0 11-1.414 1.414l-.708-.707zM10 17a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.78-1.22a1 1 0 00-1.415 1.415l.707.708a1 1 0 001.414-1.414l-.707-.709zM3 10a1 1 0 100 2H2a1 1 0 100-2h1zm1.22-4.78a1 1 0 00-1.415-1.415l-.708.707a1 1 0 001.414 1.414l.709-.708zM10 7a3 3 0 100 6 3 3 0 000-6z"/>
+                        </svg>
+                        </button>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu-button" class="text-indigo-500 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                    d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>        
+    </header>
+    
+    <!-- Main -->
+    <main class="flex-grow w-full justify-center mb-10">
+        <div class="flex items-center justify-center min-h-screen">
+            <!-- Sign Up Section -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mt-20">
+                <h2 class="text-3xl font-bold text-center text-purple-600 dark:text-purple-400 mb-4">
+                    Join VibeAnime Today!
+                </h2>
+                <p class="text-center text-sm text-gray-600 dark:text-gray-400 mb-4">
+                    Step into a world of stunning anime visuals! Sign up now to download high-quality anime pictures, save your favorites, and be part of an amazing anime-loving community.
+                </p>
+                <p class="text-center text-sm text-gray-600 dark:text-gray-400 mb-6">
+                    Start your journey now - it's free!
+                </p>
+                <form>
+                    <!-- Name Field -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" 
+                            class="mt-1 w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-gray-100" required>
+                    </div>
+    
+                    <!-- Email Field -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" 
+                            class="mt-1 w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-gray-100" required>
+                    </div>
+    
+                    <!-- Password Field -->
+                    <div class="mb-6">
+                        <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" 
+                            class="mt-1 w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-gray-100" required>
+                    </div>
+    
+                    <!-- Sign Up Button -->
+                    <button type="submit" 
+                            class="btn-cta w-full bg-purple-500 text-white p-3 rounded-lg hover:bg-purple-600 dark:bg-purple-600 dark:hover:bg-purple-700">
+                        Sign Up
+                    </button>
+                </form>
+    
+                <!-- Social Sign-Up Options -->
+                <div class="mt-6 text-center">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Or sign up with:</p>
+                    <div class="flex align-middle justify-center space-x-4 flex-wrap gap-y-2">
+                        <button class="btn-social bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+                            Facebook
+                        </button>
+                        <button class="btn-social bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+                            Google
+                        </button>
+                        <button class="btn-social bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 mr-4">
+                            AppleID
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Sign In Link -->
+                <p class="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
+                    Already have an account? <a href="login.html" class="text-purple-500 hover:underline dark:text-purple-400">Sign In</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    
+
+    <!-- Footer -->
+    <footer class="bg-purple-600 dark:bg-purple-800 p-4 text-center text-white">
+        <p>&copy; 2025 VibeAnime. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Custom font and anime-inspired background */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.dark body {
+  background: linear-gradient(135deg, #2c3e50 0%, #4b6cb7 100%);
+}
+/* Custom animation for buttons */
+.btn-cta {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn-cta:hover {
+  transform: scale(1.05);
+}
+/* Image hover effect */
+.anime-img {
+  transition: transform 0.3s ease;
+}
+.anime-img:hover {
+  transform: scale(1.05);
+}
+
+/* Logo before name */
+.logo:before{
+  content: url('/assets/img/logo.png');
+}

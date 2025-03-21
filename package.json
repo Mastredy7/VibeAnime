@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.11",
+    "concurrently": "^9.1.2",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.0.11"
+  },
+  "scripts": {
+    "start": "concurrently \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"npm run live\"",
+    "live": "live-server --port=3000"
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeAnime - Search</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- JavaScript for Dark/Light Mode Toggle -->
+    <script type="text/JavaScript" src="js/dark-light.js" defer></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="flex-wrap">
+        <!-- Navigation Bar -->
+        <nav class="bg-purple-600 dark:bg-purple-800 p-4 shadow-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="logo text-2xl font-bold text-white">VibeAnime</a>
+                <div class="space-x-4 ml-5 flex flex-wrap">
+                    <a href="index.html" class="text-white hover:text-purple-200">Home</a>
+                    <a href="login.html" class="text-white hover:text-purple-200">Login</a>
+                    <a href="about.html" class="text-white hover:text-purple-200">About</a>
+                    <!-- Button Toggle -->
+                    <div>
+                        <button id="theme-toggle" class="text-indigo-500 focus:outline-none">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 3a1 1 0 011 1v1a1 1 0 11-2 0V4a1 1 0 011-1zm4.22 1.22a1 1 0 011.415 1.415l-.707.707a1 1 0 11-1.414-1.414l.707-.708zM17 10a1 1 0 100 2h1a1 1 0 100-2h-1zm-1.22 4.78a1 1 0 011.415-1.415l.707.708a1 1 0 11-1.414 1.414l-.708-.707zM10 17a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.78-1.22a1 1 0 00-1.415 1.415l.707.708a1 1 0 001.414-1.414l-.707-.709zM3 10a1 1 0 100 2H2a1 1 0 100-2h1zm1.22-4.78a1 1 0 00-1.415-1.415l-.708.707a1 1 0 001.414 1.414l.709-.708zM10 7a3 3 0 100 6 3 3 0 000-6z"/>
+                        </svg>
+                        </button>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="menu-button" class="text-indigo-500 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                    d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow container mx-auto text-center">
+        <!-- Search Section -->
+        <section class="container mx-auto py-24 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-6">
+                Search for Anime Images
+            </h1>
+            <form class="max-w-xl mx-auto">
+                <div class="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg shadow-md">
+                    <input type="text" placeholder="Search for anime images..." 
+                        class="w-full p-4 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-gray-100">
+                    <button type="submit" 
+                            class="btn-search bg-purple-500 text-white p-4 rounded-r-lg hover:bg-purple-600 dark:bg-purple-600 dark:hover:bg-purple-700">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Results Section: Anime Image Gallery -->
+        <section class="container mx-auto pr-10 pl-10 justify-center mb-20">
+            <div class="columns-1 sm:columns-2 lg:columns-4 xl:columns-5 gap-6 auto-rows-auto space-y-4">
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime1.jpg" alt="Anime Image 1" class="w-full h-full anime-img"> 
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime2.jpg" alt="Anime Image 2" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime3.jpg" alt="Anime Image 3" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime4.jpg" alt="Anime Image 4" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime5.jpg" alt="Anime Image 5" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime6.jpg" alt="Anime Image 5" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime7.jpg" alt="Anime Image 5" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime8.jpg" alt="Anime Image 5" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime9.jpg" alt="Anime Image 5" class="w-full h-full anime-img">
+                </div>
+                <div class="rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/anime10.jpg" alt="Anime Image 5" class="w-full h-full anime-img">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+     <!-- Footer -->
+     <footer class="bg-purple-600 dark:bg-purple-800 p-4 text-center text-white">
+        <p>&copy; 2025 VibeAnime. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
