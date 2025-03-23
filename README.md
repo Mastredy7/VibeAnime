@@ -18,4 +18,4 @@ VibeAnime is the ultimate destination for **trendy and high-quality anime pictur
 ## 📌 How to Use  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/VibeAnime.git
+   git clone https://github.com/Mastredy7/vibeanime.git
